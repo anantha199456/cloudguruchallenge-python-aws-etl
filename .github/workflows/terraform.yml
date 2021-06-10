@@ -1,0 +1,7 @@
+name: "Terraform github action"
+on:
+  pull_request:
+  push:
+    branches:
+      - terraform
+  
