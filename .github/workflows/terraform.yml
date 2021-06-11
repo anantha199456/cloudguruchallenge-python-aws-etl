@@ -12,7 +12,7 @@ on:
 
 env:
   tf_version: '0.13.4'
-  tf_working_dir: './setup'
+  tf_working_dir: './setups'
   project: 'acg-etl'
   aws_region: 'us-east-1' 
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
