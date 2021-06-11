@@ -63,14 +63,14 @@ jobs:
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN_ACCESS }}
           #terraform_version: 0.12.29
       
-      - name: 'AWS IAM Assume Role'
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ env.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ env.AWS_DEFAULT_REGION }}
-          # role-duration-seconds: 1200
-          #role-session-name: GH-Actions-${{ env.project }}
+      # - name: 'AWS IAM Assume Role'
+      #   uses: aws-actions/configure-aws-credentials@v1
+      #   with:
+      #     aws-access-key-id: ${{ env.AWS_ACCESS_KEY_ID }}
+      #     aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
+      #     aws-region: ${{ env.AWS_DEFAULT_REGION }}
+      #     # role-duration-seconds: 1200
+      #     #role-session-name: GH-Actions-${{ env.project }}
      
       - name: 'Terraform Init'
         uses: hashicorp/terraform-github-actions@master
