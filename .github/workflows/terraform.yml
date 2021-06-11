@@ -16,7 +16,7 @@ env:
   project: 'acg-etl'
   aws_region: 'us-east-1'   
     
- jobs:
+jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
