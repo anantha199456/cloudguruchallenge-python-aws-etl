@@ -11,7 +11,7 @@ on:
       - '.github/**'
 
 env:
-  tf_version: '0.13.4'
+  tf_version: 'v0.15.5'
   tf_working_dir: './setups'
   project: 'acg-etl'
   aws_region: 'us-east-1' 
