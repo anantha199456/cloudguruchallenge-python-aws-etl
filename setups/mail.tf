@@ -2,7 +2,7 @@
 provider "aws" {
   region = "us-east-1"
   access_key = var.AWS_ACCESS_KEY_ID
-  secret_key = var.AWS_SECRET_ACCESS_KEY
+   secret_key = var.AWS_SECRET_ACCESS_KEY
 }
 
 terraform {
@@ -24,7 +24,7 @@ module "sns" {
   display_name = "acg-etl-alert"
   stack_name = "CloudformationStackNameACGEtl"
   email_addresses = "anantha19945@gmail.com"
-  #email_addresses = "anantha19945@gmail.com"
+  ##email_addresses = "anantha19945@gmail.com"
 }
 
 module "cloudwatch_rule_event" {
