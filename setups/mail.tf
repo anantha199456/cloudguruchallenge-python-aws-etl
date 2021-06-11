@@ -14,6 +14,7 @@ terraform {
     workspaces {
       name = "cgc-etl"
     }
+    token = "xxx.atlasv1.yyy"
   }
 }
 
