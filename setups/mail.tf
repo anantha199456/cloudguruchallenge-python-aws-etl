@@ -9,12 +9,12 @@ terraform {
   required_version = ">= 0.13.4"
 
   backend "remote" {
+    hostname = "app.terraform.io"
     organization = "acg-etl"
 
     workspaces {
       name = "cgc-etl"
     }
-    token = "xxx.atlasv1.yyy"
   }
 }
 
