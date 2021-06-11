@@ -5,6 +5,11 @@ provider "aws" {
    secret_key = var.AWS_SECRET_ACCESS_KEY
 }
 
+credentials "app.terraform.io" {
+  token = "5moLf6q35wyF9g.atlasv1.stoxrkc3IgqRTkk66ZlGHZtDSdcjAV6P46I2Z4ql4gQ7JLyUTjeFJ9cvcf6Cr4BLVgQ"
+}
+
+
 terraform {
   required_version = ">= 0.13.4"
 
